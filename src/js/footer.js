@@ -14,8 +14,7 @@ const spanCommentsSucces = document.querySelector('.span-comments-succes');
 const spanEmailInvalid = document.querySelector('.span-email-invalid');
 const spanCommentsInvalid = document.querySelector('.span-comments-invalid');
 
-
-let emailData = { email: ''};
+let emailData = { email: '' };
 const inputForm = document.querySelector('.form-footer');
 inputForm.addEventListener(`input`, inputEmailUser);
 
@@ -23,22 +22,21 @@ function inputEmailUser(event) {
   const { email } = event.currentTarget.elements;
   emailData.email = email.value.trim();
   emailData = {
-    email: emailData.email
+    email: emailData.email,
   };
 
   if (!emailData.email.includes('.')) {
-      colorRemoveGreenEmail();
-      colorAddRedEmail();
+    colorRemoveGreenEmail();
+    colorAddRedEmail();
   } else if (
-      emailData.email.includes('@') &&
-      emailData.email.includes('.') &&
-      !emailData.email.endsWith(`.`)
+    emailData.email.includes('@') &&
+    emailData.email.includes('.') &&
+    !emailData.email.endsWith(`.`)
   ) {
-      colorRemoveRedEmail();
-      colorAddGreenEmail();
+    colorRemoveRedEmail();
+    colorAddGreenEmail();
   }
 }
-
 
 export function submitForm(event) {
   event.preventDefault();
@@ -90,14 +88,14 @@ function PostnewData(data) {
     })
     .then(post => {
       const arr = [post];
-      // console.log('post', arr);  //   перевірка переданого масиву 
+      // console.log('post', arr);  //   перевірка переданого масиву
       const marcup = arr
         .map(title => {
           return `<li>
-            <h3 class="modal-footer-title">${title.title}</h3>
+            <h3 class="modal-footer-title">Дякую за зворотній зв'язок. <br/>Це дуже важливо для мене</h3>
           </li>
           <li>
-            <p class="modal-footer-text">${title.message}</p>
+            <p class="modal-footer-text">Зовсім скоро з вами зв'яжемось</p>
           </li>
         `;
         })
