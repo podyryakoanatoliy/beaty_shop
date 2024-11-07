@@ -1,0 +1,353 @@
+.aboutme-image {
+    border-radius: 24px;
+}
+
+.aboutme-text-container {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 24px;
+    width: 100%;
+    height: 380px;
+    background: #242527;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme-textcontainer-header {
+    font-size: 19px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    width: 279px;
+    height: 196px;
+}
+
+.aboutme-functional {
+    color: #ed3b44;
+}
+
+.aboutme-websites {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.aboutme-image {
+    width: 100%;
+}
+
+.aboutme-container {
+    margin-bottom: 32px;
+}
+
+.aboutme-ac-header {
+    position: relative;
+}
+
+.ac .ac-header .aboutme-ac-trigger {
+    font-family: "Inter Tight", sans-serif;
+    position: relative;
+    padding-right: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.aboutme-accordeon-svg {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aboutme-ac .aboutme-ac-header #trigger::after {
+    content: "";
+}
+
+.accordion-container .aboutme-ac.is-active>.aboutme-ac-header #trigger::after {
+    content: "";
+}
+
+.accordion-container .aboutme-ac {
+    background: #1c1d20;
+    border: none;
+}
+
+.accordion-container .ac .ac-panel .aboutme-ac-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+
+.accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme {
+    margin-bottom: 32px;
+}
+
+.accordion-container .ac .ac-panel .aboutme-ac-text li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+.aboutme-ac {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.aboutme-ac::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: -20px;
+    background-color: rgba(250, 250, 250, 0.2);
+    position: absolute;
+}
+
+.aboutme-ac .aboutme-ac-header .aboutme-ac-trigger::after {
+    content: "";
+}
+
+.aboutme-ac-panel {
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+.aboutme-ac-panel.is-active {
+    height: auto;
+}
+
+.accordion-container .aboutme-ac.aboutme-ac.is-active>.aboutme-ac-header .aboutme-ac-trigger::after {
+    content: "";
+}
+
+.aboutme-accordeon-svg {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 9px;
+    width: 36px;
+    height: 36px;
+}
+
+.aboutme-swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.about-swipe {
+    width: 320px;
+    position: relative;
+}
+
+.about-me-button {
+    position: absolute;
+    right: var(--swiper-navigation-sides-offset, 10px);
+    top: 60%;
+    z-index: 10;
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+.aboutme-swiper-container .about-me-button::after {
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.aboutme-swiper-container .about-me-button .swiper-svg {
+    fill: #3b3b3b;
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    left: 30%;
+}
+
+.aboutme-ac-devis {
+    font-weight: 500;
+    font-size: 22px;
+    color: #f11212;
+}
+
+.aboutme-swiper-container>.aboutme-swiper-wrapper>.aboutme-swiper-slide {
+    border-radius: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(250, 250, 250, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 130px;
+    height: 130px;
+    transition-delay: 0.02s;
+    margin-right: 0;
+}
+
+.aboutme-swiper-container {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 260px;
+}
+
+.aboutme-button-1440 {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    display: none;
+}
+
+.accordion-container {
+    margin-bottom: 52px;
+}
+
+.accordion-container .aboutme-ac .aboutme-ac-panel .aboutme-ac-text {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    padding-top: 0;
+}
+
+@media screen and (min-width:768px) {
+    .aboutme-swiper-container>.aboutme-swiper-wrapper>.aboutme-swiper-slide {
+        height: 200px;
+        width: 200px;
+    }
+
+    .aboutme-textcontainer-header {
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 1.05;
+        width: 576px;
+        height: 200px;
+    }
+
+    .aboutme-swiper-slide p {
+        font-size: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .aboutme-text-container {
+        height: 620px;
+    }
+
+    .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme {
+        margin-bottom: 16px;
+    }
+
+    .aboutme-swiper-container .about-me-button .swiper-svg {
+        width: 29px;
+        height: 22px;
+    }
+
+    .about-swipe {
+        width: 704px;
+    }
+
+
+
+    .aboutme-swiper-container {
+        width: 600px;
+    }
+
+    .accordion-container {
+        margin-bottom: 84px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .accordion-container {
+        margin-bottom: 116px;
+    }
+
+    .aboutme-textcontainer-header {
+        width: 552px;
+        height: 200px;
+    }
+
+    .aboutme-button-1440 {
+        display: block;
+    }
+
+    .aboutme-svg {
+        stroke-width: 2px;
+        stroke: #3b3b3b;
+        fill: #3b3b3b;
+    }
+
+
+
+    .aboutme-container {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        margin-bottom: 96px;
+    }
+
+    .aboutme-width-container {
+        width: 575px;
+        height: 700px;
+    }
+
+    .aboutme-ac-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 68px;
+    }
+
+    .accordion-container .aboutme-ac .aboutme-ac-text {
+        width: 612px;
+    }
+
+    .aboutme-button-1440 {
+        right: -6px;
+        display: flex;
+    }
+
+    .accordion-container .aboutme-ac .aboutme-ac-panel .first-p-aboutme {
+        margin-bottom: 32px;
+    }
+
+    .aboutme-image {
+        height: 700px;
+    }
+
+    .about-swipe {
+        width: 1376px;
+    }
+
+    .aboutme-swiper-container {
+        width: 1200px;
+    }
+}
