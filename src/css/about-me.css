@@ -209,6 +209,13 @@
     width: 260px;
 }
 
+.instagram {
+    color: #f11212;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .aboutme-button-1440 {
     position: absolute;
     top: 50%;
@@ -350,4 +357,5 @@
     .aboutme-swiper-container {
         width: 1200px;
     }
+
 }
