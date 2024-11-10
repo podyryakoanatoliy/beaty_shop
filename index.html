@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap"
+      rel="stylesheet"
+    /> -->
+    
+    <script type="module" crossorigin src="/portfolio-7/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/portfolio-7/assets/vendor-82e70d45.js">
+    <link rel="stylesheet" href="/portfolio-7/assets/vendor-aff52511.css">
+    <link rel="stylesheet" href="/portfolio-7/assets/index-94b7c164.css">
+  </head>
+
+  <body>
+    <header id="header" class="header">
+  <div class="container header-container">
+    <nav class="header-navigation">
+      <div class="header-navigation-container">
+        <!-- Mobile -->
+        <a href="./index.html" class="header-logo">
+          <img
+            class="header-photo"
+            src="/portfolio-7/assets/logo-28eb6a99.jpg"
+            alt="my-photo"
+            width="100"
+            height="100"
+          />
+
+          <p class="header-name">
+            ELIZABETH <br />
+            <span class="name-part">BEAUTY</span>
+          </p>
+        </a>
+        <button type="button" class="header-button header-mob-button">
+          <svg class="header-mobile-menu" width="28" height="28">
+            <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <!-- mobile end -->
+        <!-- start tab+desk -->
+        <div class="header-menu-div">
+          <!-- <a class="header-menu">Menu</a> -->
+          <button class="header-menu">Меню</button>
+          <div class="tab-menu-hidden">
+            <ul>
+              <li class="tab-item-section">
+                <a href="#about-me" class="mob-link">Про мене</a>
+              </li>
+              <li class="tab-item-section">
+                <a href="#benefits" class="mob-link">Переваги</a>
+              </li>
+              <li class="tab-item-section">
+                <a href="#projects" class="mob-link">Виставка</a>
+              </li>
+              <li class="tab-item-section">
+                <a href="#faq" class="mob-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="#footer" class="header-button header-tab-button">
+          Консультація
+        </a>
+        <!-- end tab+desk -->
+      </div>
+    </nav>
+  </div>
+  <!-- Modal window -->
+  <div class="mob-menu-backdrop">
+    <button type="button" class="mob-close">
+      <svg class="mob-icon-close" width="28" height="28">
+        <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="mob-nav">
+      <nav>
+        <ul class="mob-list">
+          <li class="mob-item">
+            <a href="#about-me" class="mob-link">Про мене</a>
+          </li>
+          <li class="mob-item">
+            <a href="#benefits" class="mob-link">Переваги</a>
+          </li>
+          <li class="mob-item">
+            <a href="#projects" class="mob-link">Виставка</a>
+          </li>
+          <li class="mob-item">
+            <a href="#faq" class="mob-link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#footer" class="header-button header-modal-button">
+      Консультація
+    </a>
+  </div>
+</header>
+
+    <main>
+      <section id="hero" class="hero">
+  <div class="container hero-container">
+    <h1 class="hello-headline">
+      Привіт<br />Вітаю на моєму сайті.<br />Я майстер-візажист - Єлизавета
+      Подиряко.
+    </h1>
+    <div class="glory">
+      <p>Слава <span class="hero-part">Україні</span></p>
+      <p><span class="hero-part">Героям</span> Слава</p>
+    </div>
+
+    <ul class="social-links">
+      <li class="social-link-item">
+        <a
+          href="https://www.instagram.com/_liza_podyriako/"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          IG
+        </a>
+      </li>
+
+      <li class="social-link-item">
+        <a
+          href="https://www.facebook.com/"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          FB
+        </a>
+      </li>
+      <li class="social-link-item">
+        <a
+          href="https://github.com/"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          GH
+        </a>
+      </li>
+      <li class="social-link-item">
+        <a
+          href="mailto:soloshenkoliza2003@gmail.com"
+          class="social-link email"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          soloshenkoliza2003@gmail.com
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="about-me" class="about-me">
+  <div class="container">
+    <div class="aboutme-container">
+      <h2 class="visually-hidden">About Me</h2>
+      <div class="aboutme-text-container aboutme-width-container">
+        <h3 class="aboutme-textcontainer-header">
+          <span class="aboutme-functional"
+            >Розкриваю твою красу через мистецтво макіяжу.
+          </span>
+          <br />
+          Я створюю образи, які підкреслюють твою індивідуальність та додають
+          впевненості. Кожен макіяж — це не просто косметика, це мистецтво, яке
+          дарує емоції та неповторні моменти.
+          <span class="aboutme-websites"
+            >Дозволь мені допомогти тобі виглядати бездоганно в будь-який
+            день!</span
+          >
+        </h3>
+      </div>
+      <div class="aboutme-image-container aboutme-width-container">
+        <img class="aboutme-image" src="/portfolio-7/assets/photo-2817a8d1.jpg" alt="man" />
+      </div>
+    </div>
+
+    <ul class="accordion-container">
+      <li class="ac aboutme-ac js-enabled is-active">
+        <h2 class="ac-header aboutme-ac-header">
+          <button type="button" class="ac-trigger aboutme-ac-trigger">
+            ПРО МЕНЕ
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg">
+              <use
+                href="/portfolio-7/assets/icons-eb12744c.svg#icon-accordeon_mobile_opened_svg-min"
+              ></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel aboutme-ac-panel">
+          <p class="ac-text aboutme-ac-text first-p-aboutme">
+            Я – Єлизавета Подиряко, професійна візажистка з великим досвідом та
+            пристрастю до мистецтва макіяжу. Володію широким спектром технік –
+            від класичних до авангардних, що дозволяє створювати образи для
+            будь-якого випадку, від весільного до подіумного макіяжу. Постійно
+            вдосконалюю свої знання, відвідуючи майстер-класи, тренінги, а також
+            стежу за останніми світовими тенденціями та інноваціями в індустрії
+            краси.
+          </p>
+          <p class="ac-text aboutme-ac-text">
+            Моя робота базується на індивідуальному підході: я вмію підкреслити
+            унікальні риси кожного клієнта, обираючи саме ті відтінки та
+            техніки, що найкраще розкриють їх природну красу. Я завжди у пошуку
+            творчих рішень та прагну створювати гармонійні образи, які не лише
+            відповідають зовнішньому вигляду, але й підкреслюють особистість
+            людини. Високий рівень професіоналізму та аналітичні здібності
+            допомагають мені ефективно вирішувати будь-які завдання, незалежно
+            від складності. Я переконана, що макіяж – це більше, ніж просто
+            косметика, це спосіб самовираження та інструмент для підвищення
+            впевненості у собі.
+          </p>
+          <h2 class="aboutme-ac-devis">
+            Мій девіз – краса в деталях, а кожен образ – <br />це маленьке
+            мистецтво, яке я створюю з душею.
+          </h2>
+        </div>
+      </li>
+
+      <li class="ac aboutme-ac">
+        <h2 class="ac-header aboutme-ac-header">
+          <button type="button" class="ac-trigger aboutme-ac-trigger">
+            НАВИЧКИ/ЗАХОПЛЕННЯ
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg">
+              <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-accordeon_svg_mobile-min"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel aboutme-ac-panel">
+          <div class="ac-text aboutme-ac-text">
+            <p>Володіння техніками макіяжу</p>
+            <p>Колористика</p>
+            <p>Знання косметичних продуктів</p>
+            <p>Гігієна та догляд за інструментами</p>
+            <p>Індивідуальний підхід до клієнта</p>
+            <p>Техніки нанесення гриму та спеціального макіяжу</p>
+            <p>Креативність та відчуття стилю</p>
+            <p>Комунікабельність та стресостійкість</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="ac aboutme-ac">
+        <h2 class="ac-header aboutme-ac-header">
+          <button type="button" class="ac-trigger aboutme-ac-trigger">
+            НАВЧАННЯ
+            <svg width="9px" height="4.5px" class="aboutme-accordeon-svg">
+              <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-accordeon_svg_mobile-min"></use>
+            </svg>
+          </button>
+        </h2>
+        <div class="ac-panel aboutme-ac-panel">
+          <div class="ac-text aboutme-ac-text">
+            <p>
+              2019 - 2023 / Вінницький державний педагогічний університет /
+              Вінниця
+            </p>
+            <p>
+              2023 - 2024 / Курси (майстер-класи) візажистів від неповторної
+              <a
+                class="instagram"
+                href="https://www.instagram.com/olyaa.makeup/profilecard/?igsh=MXB2a2hlcXlnZjB4"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                @olyaa.makeup</a
+              >
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="about-swipe">
+      <div class="swiper-container aboutme-swiper-container">
+        <ul class="swiper-wrapper aboutme-swiper-wrapper">
+          <!-- <li class="swiper-slide aboutme-swiper-slide">Мистецтво макіяжу</li> -->
+          <li class="swiper-slide aboutme-swiper-slide">Колористика</li>
+          <li class="swiper-slide aboutme-swiper-slide">Типи шкіри</li>
+          <li class="swiper-slide aboutme-swiper-slide">Корекція</li>
+          <li class="swiper-slide aboutme-swiper-slide">Контуринг</li>
+          <li class="swiper-slide aboutme-swiper-slide">Комунікація</li>
+          <li class="swiper-slide aboutme-swiper-slide">Гігієна</li>
+          <li class="swiper-slide aboutme-swiper-slide">Дезинфекція</li>
+        </ul>
+
+        <div class="swiper-button-next about-me-button">
+          <svg width="21px" height="16px" class="swiper-svg">
+            <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-Union"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="benefits" class="benefits">
+  <div class="container bnf-container">
+    <div class="bnf-title-container">
+      <h2 class="bnf-title">ПЕРЕВАГИ РОБОТИ ЗІ МНОЮ</h2>
+    </div>
+    <div class="bnf-text-container">
+      <ul class="bnf-list">
+        <li class="bnf-item">
+          <div class="bnf-svg-wrap">
+            <svg class="bnf-svg" width="24" height="24">
+              <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-user-01" />
+            </svg>
+          </div>
+          <h3 class="bnf-subtitle">ДОСВІД</h3>
+          <p class="bnf-text">
+            Мій досвід як візажистки охоплює створення унікальних образів для
+            весіль, фотосесій та модних показів. Працюючи з різною шкірою та
+            віком моїх клієнтів, я впевнено можу сказати, що готова до нових
+            викликів
+          </p>
+        </li>
+        <li class="bnf-item">
+          <div class="bnf-svg-wrap">
+            <svg class="ben-svg" width="24" height="24">
+              <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-message-chat-circle" />
+            </svg>
+          </div>
+          <h3 class="bnf-subtitle">КОМУНІКАЦІЯ</h3>
+          <p class="bnf-text">
+            Розуміння ваших потреб і побажань є моїм пріоритетом, і я завжди
+            відкрита до дискусій і коригувань.
+          </p>
+        </li>
+        <li class="bnf-item">
+          <div class="bnf-svg-wrap">
+            <svg class="ben-svg" width="24" height="24">
+              <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-brush-01" />
+            </svg>
+          </div>
+          <h3 class="bnf-subtitle">ЯКІСТЬ</h3>
+          <p class="bnf-text">
+            Моя мета – не просто зробити макіяж, а створити витончений образ,
+            який буде стійким і підкреслить вашу природну красу. Кожна деталь
+            має значення, і я докладаю максимум зусиль, щоб ви відчували себе
+            впевнено та комфортно.
+          </p>
+        </li>
+        <li class="bnf-item">
+          <div class="bnf-svg-wrap">
+            <svg class="ben-svg" width="24" height="24">
+              <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-hourglass-02" />
+            </svg>
+          </div>
+          <h3 class="bnf-subtitle">ШВИДКІСТЬ</h3>
+          <p class="bnf-text">
+            Я ціную ваш час, тому працюю швидко й ефективно, без втрати якості.
+            Завдяки відточеним технікам та досвіду, я створюю бездоганний образ
+            у стислий термін, щоб ви могли насолоджуватися результатом без
+            зайвого очікування.
+          </p>
+        </li>
+      </ul>
+      <a href="#footer" class="bnf-button">Консультація</a>
+    </div>
+  </div>
+</section>
+
+      <section id="projects" class="projects">
+  <div class="container">
+    <h2>ПРИКЛАДИ РОБІТ/ВИСТАВКА</h2>
+
+    <!-- -------------- -->
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide-part slide-part-js">
+          <div class="img-block">
+            <img
+              src="/portfolio-7/assets/halloween-makeup-witch-5b26d4bc.jpg"
+              alt="1"
+              class="prj-img"
+            />
+          </div>
+        </div>
+        <div class="swiper-slide slide-part slide-part-js">
+          <div class="img-block">
+            <img src="/portfolio-7/assets/vizagist2-76f94b23.jpg" alt="2" class="prj-img" />
+          </div>
+        </div>
+        <div class="swiper-slide slide-part slide-part-js">
+          <div class="img-block">
+            <img src="../img/Project/common.jpg" alt="3" class="prj-img" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev button-swiper">
+        <svg class="icon" width="52" height="52">
+          <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-arrow-right-min" />
+        </svg>
+      </div>
+      <div class="swiper-button-next button-swiper">
+        <svg class="icon" width="52" height="52">
+          <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-arrow-right-min" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="faq" class="faq">
+  <div class="container">
+    <h2 class="faq-title">НАЙЧАСТІШІ ЗАПИТАННЯ</h2>
+    <ul class="faq-accordion-container">
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-subtitle">
+          <button type="button" class="ac-trigger faq-trigger">
+            Як довго триматиметься макіяж?
+          </button>
+        </h3>
+        <div class="ac-panel faq-panel">
+          <p class="ac-text faq-text">
+            Макіяж може триматися від 6 до 12 годин залежно від типу шкіри,
+            використовуваних засобів та умов (наприклад, вологості або тепла).
+            Для довготривалого ефекту важливо використовувати професійні бази та
+            фіксуючі спреї.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-subtitle">
+          <button type="button" class="ac-trigger faq-trigger">
+            Які продукти найкраще підходять для чутливої шкіри?
+          </button>
+        </h3>
+        <div class="ac-panel faq-panel">
+          <p class="ac-text faq-text">
+            Для чутливої шкіри рекомендую використовувати гіпоалергенні та
+            некомедогенні продукти. Важливо також обирати засоби без
+            ароматизаторів та спирту.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-subtitle">
+          <button type="button" class="ac-trigger faq-trigger">
+            Чи можна зробити макіяж на короткій вечірці?
+          </button>
+        </h3>
+        <div class="ac-panel faq-panel">
+          <p class="ac-text faq-text">
+            Звичайно! Для вечірки можна зробити макіяж, що підкреслить ваші
+            найкращі риси, з акцентом на очі або губи, залежно від вашого стилю
+            та настрою.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-subtitle">
+          <button type="button" class="ac-trigger faq-trigger">
+            Як підготувати шкіру до макіяжу?
+          </button>
+        </h3>
+        <div class="ac-panel faq-panel">
+          <p class="ac-text faq-text">
+            Шкіра повинна бути очищена, зволожена та захищена. Використання
+            праймера допоможе створити ідеальну основу для макіяжу, що ляже
+            рівно та триматиметься довше.
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-subtitle">
+          <button type="button" class="ac-trigger faq-trigger">
+            Як звязатись з вами?
+          </button>
+        </h3>
+        <div class="ac-panel faq-panel">
+          <p class="ac-text faq-text">
+            Мої контактні дані написані в кіці сайту
+          </p>
+        </div>
+      </li>
+
+      <li class="ac faq-item">
+        <h3 class="ac-header faq-subtitle">
+          <button type="button" class="ac-trigger faq-trigger">
+            Як вибрати правильний тон фонду для шкіри?
+          </button>
+        </h3>
+        <div class="ac-panel faq-panel">
+          <p class="ac-text faq-text">
+            Для вибору правильного тону фонду важливо тестувати його на лінії
+            щелепи або на шії при природному освітленні. Тон повинен бути
+            максимально близьким до природного кольору вашої шкіри, щоб макіяж
+            виглядав природно і не виділявся.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="covers covers-section section" id="covers">
+  <h2 class="visually-hidden">Covers</h2>
+  <div class="content-covers">
+    <ul class="marquee-inner">
+      <li class="marquee">
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-1-27327dab.jpg"
+              alt="make-up"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <img
+            class="covers-image"
+            src="/portfolio-7/assets/covers-2-0fd3f4cf.jpg"
+            alt="transforming-your-body"
+            width="282"
+            loading="lazy"
+          />
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-3-cc129981.jpg"
+              alt="mimino"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-4-3f7f34d8.jpg"
+              alt="make-up"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="marquee">
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-5-3907fd21.jpg"
+              alt="ukrainian-artistry"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-6-de240474.jpg"
+              alt="finances-masterfully"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-7-e98a1e26.jpg"
+              alt="turn-your-business"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-8-243fbc80.jpg"
+              alt="ukrainian-artistry"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="marquee">
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-9-7137913f.jpg"
+              alt="fresh-box"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-10-d00be20d.jpg"
+              alt="organic-vegetables"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-11-f1ee7425.jpg"
+              alt="stay-healthy"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-12-e07fcc60.jpg"
+              alt="fresh-box"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+      </li>
+      <li class="marquee">
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-14-e27c5f4c.jpg"
+              alt="turn-your-business"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-15-98c5e60f.jpg"
+              alt="discover"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-16-cb99f9e3.jpg"
+              alt="make-up"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+        <a href="" target="_blank" class="marquee__line">
+          <picture>
+            <img
+              class="covers-image"
+              src="/portfolio-7/assets/covers-17-faacd665.jpg"
+              alt="transforming-your-body"
+              width="282"
+              loading="lazy"
+            />
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="reviews" class="reviews">
+  <div class="container reviews-container">
+    <h2 class="reviews-title">ВІДГУКИ</h2>
+
+    <div class="review-swiper">
+      <ul class="swiper-wrapper swiper-wrapper-js"></ul>
+      <div class="buttons">
+        <div class="swiper-button-prev button-swiper">
+          <svg class="icon" width="32" height="32">
+            <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-arrow-right-min" />
+          </svg>
+        </div>
+        <div class="swiper-button-next button-swiper">
+          <svg class="icon" width="32" height="32">
+            <use href="/portfolio-7/assets/icons-eb12744c.svg#icon-arrow-right-min" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div class="go-top">
+  <!--   <span class="go-top-arrow">⯅</span> -->
+  <!-- ⊼⋀⏶△▲⮉ -->
+
+  <!--   <svg class="go-top-icon">
+    <use href="./img/icons.svg#icon-go-top"></use>
+  </svg> -->
+  <svg class="go-top-icon">
+    <use xlink:href="/portfolio-7/assets/icons-eb12744c.svg#icon-go-top"></use>
+  </svg>
+</div>
+
+    </main>
+    <footer id="footer" class="footer">
+  <div class="container">
+    <div class="container-title-footer">
+      <div class="container-img-footer">
+        <img
+          src="../img/footer/image_footer.png"
+          alt="client photo"
+          class="img-footer"
+        />
+        <h2 class="title-footer">
+          Давай почнемо <span class="span-footer">ПРАЦЮ</span><br />
+        </h2>
+      </div>
+      <h2 class="title-footer">разом</h2>
+    </div>
+    <form class="form-footer" autocomplete="off">
+      <input
+        type="email"
+        class="input-email"
+        name="email"
+        placeholder="clients@gmail.com"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+      />
+      <span class="span-email-succes">Успішно!</span>
+      <span class="span-email-invalid">Некоректна почта, спробуй ще</span>
+      <input
+        type="text"
+        class="input-comments"
+        name="comments"
+        placeholder="Коментар"
+      />
+      <span class="span-comments-succes">Успішно!</span>
+      <span class="span-comments-invalid"
+        >Некоректний коментар, спробуй ще</span
+      >
+      <button type="submit" class="button-footer">Надіслати</button>
+    </form>
+    <div>
+      <ul class="container-contact-footer">
+        <li>
+          <a
+            href="mailto:soloshenkoliza2003@gmail.com"
+            class="contact-footer contact-footer-email"
+            >soloshenkoliza2003@gmail.com</a
+          >
+        </li>
+        <li>
+          <a href="tel:+380987893587" class="contact-footer contact-footer-tel"
+            >+380 98 789 35 87</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="container-footer-modal hidden">
+      <div class="modal-windows-content">
+        <button type="button" class="button-close">X</button>
+        <ul class="modal"></ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
