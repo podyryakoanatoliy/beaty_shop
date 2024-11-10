@@ -16,7 +16,6 @@ scrollBnf();
 import { faqAccordion } from './js/faq';
 faqAccordion();
 
-
 // import Swiper bundle with all modules installed
 import Swiper from 'swiper/bundle';
 
@@ -24,19 +23,19 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters 
-    direction: 'horizontal',
-    effect: 'flip',
-    speed: 1000,
-    grabCursor: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
+  // Optional parameters
+  direction: 'horizontal',
+  effect: 'flip',
+  speed: 1000,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
 
 import { onGetHtmlMarckup } from './js/projects';
@@ -76,11 +75,11 @@ const swiperReview = new Swiper('.review-swiper', {
 });
 
 // Footer
-import { submitForm } from './js/footer'
-const inputForm = document.querySelector(".form-footer");
+import { submitForm } from './js/footer';
+const inputForm = document.querySelector('.form-footer');
 inputForm.addEventListener('submit', submitForm);
 
 //Go-Top
 
-import {trackScroll} from './js/go-top';
+import { trackScroll } from './js/go-top';
 trackScroll();
