@@ -11,20 +11,27 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-
       rollupOptions: {
-        input: glob.sync('./src/*.html'),
+        // Вказуємо явну точку входу
+        input: glob.sync('./src/*.html'), // Якщо ви використовуєте декілька HTML файлів як точки входу
+
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
-              return 'vendor';
+              return 'vendor'; // Розділення залежностей в окремий чанк
             }
           },
-          entryFileNames: 'commonHelpers.js',
+          entryFileNames: 'commonHelpers.js', // Назва головного бандла
         },
       },
-      outDir: '../dist',
+      outDir: '../dist', // Вихідний каталог
     },
-    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    plugins: [
+      injectHTML(), // Плагін для інжекції HTML
+      FullReload(['./src/**/**.html']), // Плагін для перезавантаження при зміні HTML
+    ],
+    optimizeDeps: {
+      include: ['axios', 'swiper'], // Включаємо залежності для передзбірки
+    },
   };
 });
